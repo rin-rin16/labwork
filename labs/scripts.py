@@ -3,11 +3,13 @@ import matplotlib.pyplot as plt
 
 def avg(a):
     return sum(a)/len(a)
+
 def rande(a):
     s = 0
     for i in range(len(a)):
         s += (a[i] - avg(a))**2
     return s**0.5/len(a)
+
 def delta(a, b):
     return (rande(a)**2 + b**2)**0.5
 
